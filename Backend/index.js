@@ -5,7 +5,7 @@ const userRoutes = require("./routes/user.routes");
 const app = express();
 app.use(express.json());
 
-app.use("/", userRoutes);
+app.use("/user", userRoutes);
 
 mongoose
   .connect("mongodb://localhost:27017/test1")
